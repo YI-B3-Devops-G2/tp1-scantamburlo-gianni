@@ -4,6 +4,7 @@ mail: gianni.scantamburlo@ynov.com
 github_username: XDayonline
 
 ## Etape 
+
 Télécharger l'iso d'Ubuntu Server 18.04.3
 Télécharger VirtualBox 
 Créer une nouvelle machine virtuelle sur VirtualBox
@@ -16,6 +17,7 @@ Choisir un IP invité 127.0.0.1
 Choisir un port invité (22)
 Lancer la machine virtuelle
 Installer Ubuntu Server
+
 Installer node.js :
 Lancer les commandes :
   sudo apt-get update
