@@ -33,7 +33,9 @@ Installer Ubuntu Server
 Installer node.js :
 
 Lancer les commandes :
+  
   sudo apt-get update
+  
   sudo apt-get install nodejs npm
 
 Installer openssh
