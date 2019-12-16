@@ -6,6 +6,8 @@ github_username: XDayonline
 
 ## Etape 1
 
+### Prérequis
+
 - Télécharger l'iso d'Ubuntu Server 18.04.3
 
 - Télécharger VirtualBox 
@@ -55,9 +57,15 @@ Lancer une invite de commandes sur Windows pour se connecter en SSH
 
 ## Etape 2
 
+### Prérequis
+
 Télécharger Vagrant sur Windows
 
 Installer Vagrant
+
+Installer Virtual Box 6.0
+
+### Comment démarrer le projet
 
 Lancer une invite de commandes:
 
