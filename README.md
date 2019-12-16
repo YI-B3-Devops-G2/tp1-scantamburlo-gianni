@@ -52,3 +52,37 @@ Lancer une invite de commandes sur Windows pour se connecter en SSH
   ssh gianni@127.0.0.1 -p 8022
 
 ## Etape 2
+
+Télécharger Vagrant sur Windows
+
+Installer Vagrant
+
+Lancer une invite de commandes:
+
+  vagrant init ubuntu / trusty64
+  
+  vagrant up
+  
+Une fois que la machine virtuelle a été créé on modifie la RAM dans la configuration et on met 
+
+Se connecter en ssh en utilisant
+  
+  vagrant ssh
+
+Editer le fichier vagrantfile
+
+Mettre 1 GB de RAM:
+
+config.vm.provider "virtualbox" do |vb|
+    # Display the VirtualBox GUI when booting the machine
+    vb.gui = true
+  
+    # Customize the amount of memory on the VM:
+    vb.memory = "1024"
+  end
+
+Ajouter les lignes suivantes:
+
+config.vm.provision: shell, path: "configure"
+
+config.vm.provider "virtualbox"
