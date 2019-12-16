@@ -31,19 +31,24 @@ Lancer la machine virtuelle
 Installer Ubuntu Server
 
 Installer node.js :
-
-Lancer les commandes :
   
   sudo apt-get update
   
   sudo apt-get install nodejs npm
 
-Installer openssh
+Installer openssh :
+
+  sudo apt install openssh-client
+
+  sudo apt install openssh-server
+
 
 Installer nginx
 
-Lancer une invite de commandes sur Windows
+  sudo apt install nginx
 
-Lancer la commande : ssh gianni@127.0.0.1 -p 8022
+Lancer une invite de commandes sur Windows pour se connecter en SSH
+
+  ssh gianni@127.0.0.1 -p 8022
 
 ## Etape 2
