@@ -4,19 +4,19 @@ mail: gianni.scantamburlo@ynov.com
 
 github_username: XDayonline
 
-## Etape 
+## Etape 1
 
-Télécharger l'iso d'Ubuntu Server 18.04.3
+- Télécharger l'iso d'Ubuntu Server 18.04.3
 
-Télécharger VirtualBox 
+- Télécharger VirtualBox 
 
-Créer une nouvelle machine virtuelle sur VirtualBox
+- Créer une nouvelle machine virtuelle sur VirtualBox
 
-Mettre le disque optique en première position
+- Mettre le disque optique en première position
 
-Choisir l'iso d'Ubuntu comme disque optique
+- Choisir l'iso d'Ubuntu comme disque optique
 
-Dans la configuration réseau, ajouter une redirection de port pour le SSH
+- Dans la configuration réseau, ajouter une redirection de port pour le SSH
 
 Choisir 127.0.0.1 comme IP hôte
 
