@@ -10,6 +10,12 @@ Télécharger VirtualBox
 
 Créer une nouvelle machine virtuelle
 
+Mettre le disque optique en première position
+
+Choisir l'iso d'Ubuntu comme disque optique
+
+Installer Ubuntu Server
+
 Installer node.js
 Installer openssh
 Installer nginx
