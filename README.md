@@ -9,6 +9,7 @@
 
 - Télécharger l'iso d'Ubuntu Server 18.04.3
 - Télécharger VirtualBox
+- Cloner ce dépot : https://github.com/YI-B3-Devops/tp1-scantamburlo-gianni
 
 ### Comment démarrer le projet
 
@@ -75,5 +76,20 @@ Lancer une invite de commandes:
 Se connecter en ssh en utilisant
 ```
   vagrant ssh
+```
+
+Quitter le SSH en utilisant la commande :
+```
+    exit
+```
+
+Arrêter la machine en utilisant :
+```
+    vagrant halt
+```
+
+Supprimer la machine :
+```
+    vagrant destroy
 ```
 
