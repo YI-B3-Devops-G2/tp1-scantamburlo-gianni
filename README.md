@@ -17,11 +17,11 @@
 - Mettre le disque optique en première position
 - Choisir l'iso d'Ubuntu comme disque optique
 - Dans la configuration réseau, ajouter une redirection de port pour le SSH
-* Choisir 127.0.0.1 comme IP hôte
-* Choisir un port hôte (2222)
-* Choisir un IP invité 127.0.0.1
-* Choisir un port invité (22)
-* Faire de même pour le port 443 (HTTPS) et 80 (HTTP)
+    * Choisir 127.0.0.1 comme IP hôte
+    * Choisir un port hôte (2222)
+    * Choisir un IP invité 127.0.0.1
+    * Choisir un port invité (22)
+    * Faire de même pour le port 443 (HTTPS) et 80 (HTTP)
 
 - Lancer la machine virtuelle
 - Installer Ubuntu Server
