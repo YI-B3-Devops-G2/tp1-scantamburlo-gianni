@@ -1,97 +1,95 @@
 # B3 Devops - TP 1
 ## Info
-mail: gianni.scantamburlo@ynov.com
-
-github_username: XDayonline
+* mail: gianni.scantamburlo@ynov.com
+* github_username: XDayonline
 
 ## Etape 1
 
-- Télécharger l'iso d'Ubuntu Server 18.04.3
+### Prérequis
 
-- Télécharger VirtualBox 
+- Télécharger l'iso d'Ubuntu Server 18.04.3
+- Télécharger VirtualBox
+- Cloner ce dépot : https://github.com/YI-B3-Devops/tp1-scantamburlo-gianni
+
+### Comment démarrer le projet
 
 - Créer une nouvelle machine virtuelle sur VirtualBox
-
 - Mettre le disque optique en première position
-
 - Choisir l'iso d'Ubuntu comme disque optique
-
 - Dans la configuration réseau, ajouter une redirection de port pour le SSH
+* Choisir 127.0.0.1 comme IP hôte
+* Choisir un port hôte (2222)
+* Choisir un IP invité 127.0.0.1
+* Choisir un port invité (22)
+* Faire de même pour le port 443 (HTTPS) et 80 (HTTP)
 
-Choisir 127.0.0.1 comme IP hôte
+- Lancer la machine virtuelle
+- Installer Ubuntu Server
+- Installer node.js :
+```
+    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+    sudo apt-get update
+    sudo apt-get install nodejs npm
+```
+- Installer openssh :
+```
+    sudo apt install openssh-client
+    sudo apt install openssh-server
+```
 
-Choisir un port hôte (2222)
+- Installer nginx
+```
+    sudo apt install nginx
+```
 
-Choisir un IP invité 127.0.0.1
+- Modifier le fichier index.html
+```
+    cd /var/www/html
+    nano index.html
+```
 
-Choisir un port invité (22)
+- Lancer une invite de commandes sur Windows pour se connecter en SSH
+```
+    ssh gianni@127.0.0.1 -p 8022
+```
 
-Faire de même pour le port 443 (HTTPS) et 80 (HTTP)
+- Fermer et enregistrer le fichier avec CTRL + X et entrer Y pour accepter
 
-Lancer la machine virtuelle
-
-Installer Ubuntu Server
-
-Installer node.js :
-  
-  sudo apt-get update
-  
-  sudo apt-get install nodejs npm
-
-Installer openssh :
-
-  sudo apt install openssh-client
-
-  sudo apt install openssh-server
-
-
-Installer nginx
-
-  sudo apt install nginx
-
-Lancer une invite de commandes sur Windows pour se connecter en SSH
-
-  ssh gianni@127.0.0.1 -p 8022
+- Tester sur un navigateur web en allant sur l'adresse : 127.0.0.1:8080
 
 ## Etape 2
 
-Télécharger Vagrant sur Windows
+### Prérequis
 
-Installer Vagrant
+- Télécharger Vagrant
+- Installer Vagrant
+- Installer Virtual Box 6.0
+
+### Comment démarrer le projet
 
 Lancer une invite de commandes:
-
+```
   vagrant init ubuntu / trusty64
-  
   vagrant up
+```
   
-Une fois que la machine virtuelle a été créé on modifie la RAM dans la configuration et on met 
-
 Se connecter en ssh en utilisant
-  
+```
   vagrant ssh
+```
 
-Editer le fichier vagrantfile
+Quitter le SSH en utilisant la commande :
+```
+    exit
+```
 
-config.vm.provision: shell, path: "configure"
+Arrêter la machine en utilisant :
+```
+    vagrant halt
+```
 
-Mettre 1 GB de RAM:
+Supprimer la machine :
+```
+    vagrant destroy
+```
 
-config.vm.provider "virtualbox" do |vb|
-    # Display the VirtualBox GUI when booting the machine
-    vb.gui = true
-  
-    # Customize the amount of memory on the VM:
-    vb.memory = "1024"
-  end
-
-Pour ajouter un port forwarding pour les ports HTTP HTTPS et SSH :
-
-Ajouter les lignes suivantes:
-
-
-config.vm.provider "virtualbox"
-
-  config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
-  config.vm.network "forwarded_port", guest: 22, host: 8022, host_ip: "127.0.0.1"
-  config.vm.network "forwarded_port", guest: 443, host: 8443, host_ip: "127.0.0.1"
