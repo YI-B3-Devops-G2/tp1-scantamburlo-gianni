@@ -16,7 +16,7 @@
 - Créer une nouvelle machine virtuelle sur VirtualBox
 - Mettre le disque optique en première position
 - Choisir l'iso d'Ubuntu comme disque optique
-- Dans la configuration réseau, ajouter une redirection de port pour le SSH
+- Dans la configuration réseau, ajouter une redirection de port pour le SSH :
     * Choisir 127.0.0.1 comme IP hôte
     * Choisir un port hôte (2222)
     * Choisir un IP invité 127.0.0.1
