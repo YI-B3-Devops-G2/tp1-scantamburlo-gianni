@@ -27,25 +27,31 @@ github_username: XDayonline
 - Installer Ubuntu Server
 - Installer node.js :
 ```
-
     curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
     sudo apt-get update
     sudo apt-get install nodejs npm
-    
 ```
 - Installer openssh :
+```
     sudo apt install openssh-client
     sudo apt install openssh-server
+```
 
 - Installer nginx
+```
     sudo apt install nginx
+```
 
 - Lancer une invite de commandes sur Windows pour se connecter en SSH
+```
     ssh gianni@127.0.0.1 -p 8022
+```
 
 - Modifier le fichier index.html
+```
     cd /var/www/html
     nano index.html
+```
 
 - Fermer et enregistrer le fichier avec CTRL + X et entrer Y pour accepter
 
@@ -62,9 +68,13 @@ github_username: XDayonline
 ### Comment démarrer le projet
 
 Lancer une invite de commandes:
+```
   vagrant init ubuntu / trusty64
   vagrant up
+```
   
 Se connecter en ssh en utilisant
+```
   vagrant ssh
+```
 
