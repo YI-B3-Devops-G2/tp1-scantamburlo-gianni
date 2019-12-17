@@ -8,7 +8,7 @@
 ### Prérequis
 
 - Télécharger l'iso d'Ubuntu Server 18.04.3
-- Télécharger VirtualBox
+- Télécharger et installer VirtualBox
 - Cloner ce dépot : https://github.com/YI-B3-Devops/tp1-scantamburlo-gianni
 
 ### Comment démarrer le projet
@@ -61,9 +61,9 @@
 
 ### Prérequis
 
-- Télécharger Vagrant
-- Installer Vagrant
-- Installer Virtual Box 6.0
+- Télécharger et installer Vagrant
+- Télécharger et installer Virtual Box 6.0
+- Cloner ce dépot : https://github.com/YI-B3-Devops/tp1-scantamburlo-gianni
 
 ### Comment démarrer le projet
 
