@@ -42,15 +42,15 @@ github_username: XDayonline
     sudo apt install nginx
 ```
 
-- Lancer une invite de commandes sur Windows pour se connecter en SSH
-```
-    ssh gianni@127.0.0.1 -p 8022
-```
-
 - Modifier le fichier index.html
 ```
     cd /var/www/html
     nano index.html
+```
+
+- Lancer une invite de commandes sur Windows pour se connecter en SSH
+```
+    ssh gianni@127.0.0.1 -p 8022
 ```
 
 - Fermer et enregistrer le fichier avec CTRL + X et entrer Y pour accepter
